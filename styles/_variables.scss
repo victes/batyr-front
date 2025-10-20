@@ -1,0 +1,38 @@
+:root {
+  --color-light: #ffffff;
+  --color-light-bg: #f6f6f6;
+  --color-accent: #084da7;
+  --color-dark: #212121;
+  --color-dark-70: rgba(33, 33, 33, 0.7);
+  --color-dark-40: rgba(33, 33, 33, 0.4);
+  --color-dark-20: rgba(33, 33, 33, 0.2);
+
+  --font-family: "Involve", sans-serif;
+  --second-family: "Avenir Next", sans-serif;
+  --third-family: "Inter", sans-serif;
+
+  --font-size: 16px;
+  --font-weight: 400;
+  --line-height: 1.6;
+
+  --transition-duration: 0.3s;
+
+  --container-width: 1800px;
+  --container-margin-x: 60px;
+
+  --border-radius: 40px;
+  --border-radius-sm: 30px;
+
+  @include tablet {
+    --container-margin-x: 30px;
+    --font-size: 14px;
+  }
+
+  @include mobile {
+    --container-margin-x: 20px;
+  }
+
+  @include mobile-s {
+    --container-margin-x: 10px;
+  }
+}

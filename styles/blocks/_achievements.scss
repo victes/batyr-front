@@ -1,0 +1,64 @@
+.achievements {
+  @include flex-center;
+  flex-direction: column;
+  padding: 80px 40px;
+
+  @include tablet {
+    padding: 60px 40px;
+  }
+  @include mobile {
+    padding: 40px 30px;
+  }
+  @include mobile-s {
+    padding: 40px 16px;
+  }
+
+  &__title {
+    text-align: center;
+    max-width: 900px;
+    margin-bottom: 40px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile-m {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 50px 30px;
+    background: var(--color-light-bg);
+    border-radius: var(--border-radius-sm);
+
+    @include mobile {
+      padding-block: 30px;
+    }
+    @include mobile-s {
+      padding-inline: 20px;
+    }
+  }
+
+  &__number {
+    @include fluid-text(120, 60);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-accent);
+  }
+
+  &__text {
+    @include fluid-text(20, 14);
+    line-height: 1.4;
+    color: var(--color-dark-70);
+  }
+}

@@ -1,0 +1,31 @@
+.history {
+  @include flex-center;
+  flex-direction: column;
+  gap: 12px;
+  padding: 80px 118px;
+
+  @include tablet {
+    padding: 33px 63px;
+  }
+
+  @include mobile {
+    padding: 40px 48px;
+  }
+
+  @include mobile-s {
+    padding: 30px 16px;
+  }
+
+
+  &__content {
+    @include fluid-text(52, 18);
+    line-height: 1.4;
+    text-align: center;
+    display: flex;
+  }
+
+  &__image {
+    display: inline;
+    height: 1em;
+  }
+}

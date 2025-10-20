@@ -1,0 +1,117 @@
+.mission {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 100px;
+    padding: 40px 40px 60px;
+    background: url("../../images/mission.webp") no-repeat center/cover;
+    z-index: -20;
+
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--color-dark-40);
+      border-radius: inherit;
+      z-index: -10;
+    }
+
+    @include tablet {
+      aspect-ratio: 241/139;
+    }
+
+    @include mobile {
+      padding: 40px 30px 60px;
+    }
+
+    @include mobile-m {
+      padding: 20px 16px;
+    }
+  }
+
+  &__tab {
+    @include flex-center(true);
+    max-height: 41px;
+    padding: 10px 16px;
+    font-weight: 500;
+
+    @include mobile {
+      max-height: 24px;
+    }
+    @include mobile-m {
+      font-size: 12px;
+    }
+  }
+
+  &__title {
+    color: var(--color-light);
+
+    @include mobile-m {
+      font-size: 16px;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @include tablet-only {
+      gap: 20px;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 30px;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius);
+
+    @include tablet-above {
+      min-height: 333px;
+    }
+
+    @include mobile {
+      padding: 30px 20px;
+    }
+  }
+
+  &__number {
+    display: inline-block;
+    padding: 13px 18px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--color-light);
+    background: var(--color-accent);
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    white-space: nowrap;
+  }
+
+  &__text {
+    color: var(--color-dark-70);
+  }
+}

@@ -1,0 +1,87 @@
+.hero {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-inline: 40px;
+  padding-block: clamp(50px, calc(135 / 1800 * 100vw) , 135px);
+
+  @include tablet {
+    padding-block: 50px;
+    padding-inline: 20px;
+    gap: 30px;
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    @include mobile {
+      padding: 30px 20px 0 20px;
+    }
+  }
+
+  &__title {
+    @include fluid-text(76, 26);
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    @include fluid-text(22, 14);
+    max-width: 720px;
+    color: var(--color-dark-70);
+    margin-bottom: 50px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+
+    @include tablet-only {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include mobile {
+      margin: auto;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+
+    @include mobile {
+      position: relative;
+      width: 100%;
+    }
+
+    & img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0, 0.2), rgba(0,0,0,0));
+      pointer-events: none;
+      border-radius: inherit;
+    }
+  }
+}

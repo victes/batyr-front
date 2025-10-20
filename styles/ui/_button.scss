@@ -1,0 +1,28 @@
+.button {
+  @include flex-center(true);
+  max-height: 61px;
+  padding: 16px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--color-light);
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius-sm);
+
+  @include tablet {
+    max-height: 54px;
+    font-size: 16px;
+  }
+
+  @include mobile {
+    max-height: 46px;
+    font-size: 14px;
+  }
+
+  @include hover {
+    background-color: #04408e;
+  }
+  @include click {
+    background-color: #1166d5;
+  }
+}

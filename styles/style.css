@@ -509,7 +509,7 @@ h4, .h4 {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     left: 0;

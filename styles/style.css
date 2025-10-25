@@ -885,7 +885,8 @@ h4, .h4 {
 }
 .history__image {
   display: inline;
-  height: 1em;
+  height: 1.4em;
+  vertical-align: middle;
 }
 
 .achievements {

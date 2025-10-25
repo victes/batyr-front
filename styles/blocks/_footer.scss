@@ -1,6 +1,13 @@
 .footer {
   padding-bottom: 30px;
 
+  @include tablet {
+    margin-bottom: 20px;
+  }
+  @include mobile {
+    padding-bottom: 10px;
+  }
+
   &__inner {
     padding: 60px 80px;
 

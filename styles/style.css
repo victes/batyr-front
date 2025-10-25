@@ -669,6 +669,16 @@ h4, .h4 {
 .footer {
   padding-bottom: 30px;
 }
+@media (max-width: 1024px) {
+  .footer {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: 10px;
+  }
+}
 .footer__inner {
   padding: 60px 80px;
 }

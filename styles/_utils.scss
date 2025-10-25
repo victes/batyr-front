@@ -5,6 +5,10 @@
 
 .rounded {
   border-radius: var(--border-radius);
+
+  @include tablet {
+    border-radius: var(--border-radius-sm);
+  }
 }
 
 .rounded-sm {
@@ -13,6 +17,11 @@
 
 .bg-white {
   background-color: var(--color-light);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+  color: var(--color-light);
 }
 
 .visually-hidden {

@@ -20,7 +20,7 @@
   }
 
   @include hover {
-    background-color: #04408e;
+    background-color: var(--color-accent-hover);
   }
   @include click {
     background-color: #1166d5;

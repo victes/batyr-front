@@ -1,0 +1,53 @@
+.contacts {
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @include mobile-above {
+      height: 520px;
+    }
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__map {
+    overflow: hidden;
+
+    & img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  &__card {
+    padding: 60px 40px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    max-width: 556px;
+    margin-bottom: 40px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      & a, & p {
+        font-size: 22px;
+      }
+    }
+  }
+}

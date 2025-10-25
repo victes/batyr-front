@@ -1,0 +1,72 @@
+.infrastructure {
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    @include tablet {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &__title {
+    @include fluid-text(32, 20);
+    @include tablet-above {
+      flex-shrink: 0;
+      max-width: 50%;
+    }
+  }
+  &__text {
+    @include tablet-above {
+      max-width: 45%;
+    }
+  }
+  &__images {
+    --gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+
+    &-head {
+      display: grid;
+      gap: var(--gap);
+      grid-template-columns: 41% 58%;
+
+      @include mobile {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &-body {
+      display: grid;
+      gap: var(--gap);
+      grid-template-columns: repeat(3, 1fr);
+
+      @include mobile {
+        grid-template-columns: 1fr 1fr;
+
+        & img:nth-child(2) {
+          width: 100%;
+          grid-row: 2;
+          grid-column: span 2;
+        }
+      }
+    }
+
+    & img {
+      object-fit: contain;
+      border-radius: var(--border-radius);
+
+      @include tablet {
+        border-radius: var(--border-radius-sm);
+      }
+    }
+
+    @include mobile {
+      --gap: 15px;
+    }
+    @include mobile-m {
+      --gap: 10px;
+    }
+  }
+}

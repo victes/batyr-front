@@ -47,6 +47,13 @@
 
       & a, & p {
         font-size: 22px;
+
+        @include mobile {
+          font-size: 20px;
+        }
+        @include mobile-m {
+          font-size: 16px;
+        }
       }
     }
   }

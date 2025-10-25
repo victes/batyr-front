@@ -3,16 +3,47 @@
 
   &__inner {
     padding: 60px 80px;
+
+    @include tablet {
+      padding: 40px 30px;
+    }
+    @include mobile {
+      padding: 40px 20px;
+    }
+    @include mobile-m {
+      padding: 30px 16px;
+    }
   }
 
   &__head {
     display: flex;
     justify-content: space-between;
+    gap: 100px;
     margin-bottom: 40px;
+
+    @include tablet {
+      gap: 60px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    @include mobile-m {
+      gap: 20px;
+    }
   }
 
   &__logo {
     margin-bottom: 40px;
+
+    @include tablet {
+      margin-bottom: 25px;
+    }
+    @include mobile {
+      margin-bottom: 15px;
+    }
   }
 
   &__info {
@@ -25,7 +56,16 @@
   &__pages {
     display: flex;
     justify-content: space-between;
-    gap: 120px;
+    gap: 5vw;
+
+    @include mobile-m {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      &-column:last-child {
+        grid-column: span 2;
+      }
+    }
 
     &-title {
       margin-bottom: 20px;

@@ -605,6 +605,7 @@ h4, .h4 {
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
+  overflow: unset;
 }
 @media (max-width: 1024px) {
   .header__inner {

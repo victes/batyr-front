@@ -982,7 +982,7 @@ h4, .h4 {
   margin-bottom: 20px;
 }
 .hero__text {
-  font-size: clamp(14px, 1.2222222222vw, 22px);
+  font-size: clamp(14px, 1.1111111111vw, 20px);
   max-width: 720px;
   color: var(--color-dark-70);
   margin-bottom: 50px;

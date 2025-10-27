@@ -37,7 +37,7 @@
   }
 
   &__text {
-    @include fluid-text(22, 14);
+    @include fluid-text(20, 14);
     max-width: 720px;
     color: var(--color-dark-70);
     margin-bottom: 50px;

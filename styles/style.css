@@ -1726,7 +1726,6 @@ h4, .h4 {
   gap: 6px;
 }
 .coaches__history-item {
-  font-weight: 300;
   color: var(--color-dark-70);
 }
 .coaches__history-item span {

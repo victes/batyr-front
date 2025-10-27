@@ -977,7 +977,7 @@ h4, .h4 {
   }
 }
 .hero__title {
-  font-size: clamp(26px, 4.2222222222vw, 76px);
+  font-size: clamp(26px, 3.8888888889vw, 70px);
   line-height: 1.2;
   margin-bottom: 20px;
 }

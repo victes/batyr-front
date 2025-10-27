@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+<header class="header container">
+    <div class="header__inner bg-white rounded">
+        <a href="/">
+            <img class="header__logo" src="./images/logo.png" alt="Школа Батыр" width="56" height="50" fetchpriority="high">
+        </a>
+        <button class="header__burger visible-mobile" type="button" aria-label="Открыть главное меню"
+                onclick="document.querySelector('.header__nav').classList.toggle('open')">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 8L2 8" stroke="#1B2454" stroke-opacity="0.85" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M18 12L2 12" stroke="#1B2454" stroke-opacity="0.85" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M12 16H2" stroke="#1B2454" stroke-opacity="0.85" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+        </button>
+        <nav class="header__nav" aria-label="Главная">
+            <div class="header__nav-top visible-mobile">
+                <img class="header__nav-logo" src="./images/logo.png" alt="Школа Батыр" width="45" height="40" loading="lazy">
+                <button class="header__close" type="button" aria-label="Закрыть главное меню"
+                        onclick="document.querySelector('.header__nav').classList.toggle('open')">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.15152 5.15152C5.62015 4.68289 6.37995 4.68289 6.84858 5.15152L12 10.303L17.1515 5.15152C17.6202 4.68289 18.3799 4.68289 18.8486 5.15152C19.3172 5.62015 19.3172 6.37995 18.8486 6.84858L13.6971 12L18.8486 17.1515C19.3172 17.6202 19.3172 18.3799 18.8486 18.8486C18.3799 19.3172 17.6202 19.3172 17.1515 18.8486L12 13.6971L6.84858 18.8486C6.37995 19.3172 5.62015 19.3172 5.15152 18.8486C4.68289 18.3799 4.68289 17.6202 5.15152 17.1515L10.303 12L5.15152 6.84858C4.68289 6.37995 4.68289 5.62015 5.15152 5.15152Z" fill="#212121" fill-opacity="0.3" />
+                    </svg>
+                </button>
+            </div>
+            <ul class="header__nav-list">
+                <li class="header__nav-item dropdown">
+                    <button class="header__nav-toggle" aria-haspopup="true" aria-controls="header__submenu"
+                            onclick="document.querySelector('#header__submenu').classList.toggle('open'); this.classList.toggle('active')">
+                        О школе
+                    </button>
+                    <ul id="header__submenu" class="header__nav-sublist">
+                        <li class="header__nav-subitem"><a href="/personal.html">Персонал</a></li>
+                        <li class="header__nav-subitem"><a href="/veterans.html">Ветераны «Батыра»</a></li>
+                        <li class="header__nav-subitem"><a href="/documents.html">Документы</a></li>
+                        <li class="header__nav-subitem"><a href="/gallery.html">Галерея</a></li>
+                        <li class="header__nav-subitem"><a href="/schedule.html">Расписание занятий</a></li>
+                        <li class="header__nav-subitem"><a href="/vacancies.html">Вакансии</a></li>
+                    </ul>
+                </li>
+                <li class="header__nav-item"><a href="/coaches.html">Тренерский состав</a></li>
+                <li class="header__nav-item"><a href="/admission.html">Поступление в школу</a></li>
+                <li class="header__nav-item"><a href="/news.html">Новости</a></li>
+                <li class="header__nav-item"><a href="/contacts.html">Контакты</a></li>
+            </ul>
+            <div class="header__nav-footer visible-mobile">
+                <a href="#">Соц-сети</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="main container">
+    <section class="section">
+        <div class="section__body hero bg-white rounded">
+            <div class="hero__content">
+                <h1 class="hero__title">Спортивная школа «Батыр» — традиции, сила и победы  с 1986 года</h1>
+                <p class="hero__text">Более 35 лет готовим мастеров спорта, участников Олимпиад  и просто любителей здорового образа жизни — школа «Батыр» открыта для каждого ребёнка</p>
+                <div class="hero__buttons">
+                    <a href="#" class="button">Расписание занятий</a>
+                    <a href="#">Поступление</a>
+                </div>
+            </div>
+            <div class="hero__image rounded">
+                <img class="rounded" src="./images/hero.webp" alt="Школа Батыр" fetchpriority="high" width="890" height="870">
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section__body history bg-white rounded">
+            <span class="section__tab">История школы</span>
+            <div class="history__content">
+                <p>
+                История школы началась в 1986 году,
+                <img src="./images/history/1.webp" class="history__image history__image-first rounded" alt="">
+                когда на базе завода «Оргсинтез» был открыт спортивный комплекс «Синтез». В 1995 году
+                <img src="./images/history/2.webp" class="history__image history__image-second rounded" alt="">
+                комплекс был передан в Госкомспорт Республики Татарстан и получил своё нынешнее имя — «Батыр». С тех пор школа стала местом, где воспитывают чемпионов
+                <img src="./images/history/3.webp" class="history__image history__image-third rounded" alt="">
+                и приобщают детей и подростков к здоровому образу жизни.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section__body achievements bg-white rounded">
+            <span class="section__tab">Успехи</span>
+            <h2 class="achievements__title">
+                За время работы спортивной школы «Батыр» было подготовлено
+            </h2>
+            <div class="achievements__cards">
+                <div class="achievements__card">
+                    <span class="achievements__number">2</span>
+                    <p class="achievements__text">участника Олимпийских игр</p>
+                </div>
+                <div class="achievements__card">
+                    <span class="achievements__number">2</span>
+                    <p class="achievements__text">призера Всемирной летней Универсиады 2013 года</p>
+                </div>
+                <div class="achievements__card">
+                    <span class="achievements__number">8</span>
+                    <p class="achievements__text">мастеров спорта международного класса</p>
+                </div>
+                <div class="achievements__card">
+                    <span class="achievements__number">70+</span>
+                    <p class="achievements__text">мастеров спорта СССР и России</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section__body mission">
+            <div class="mission__image rounded">
+                <span class="mission__tab bg-white rounded">Наша миссия</span>
+                <h2 class="mission__title">Предметом деятельности нашей спортивной школы является</h2>
+            </div>
+            <div class="mission__cards">
+                <div class="mission__card">
+                    <div class="mission__head">
+                        <span class="mission__number">1</span>
+                        <h3 class="mission__subtitle">Оздоровление и обучение</h3>
+                    </div>
+                    <p class="mission__text">оказание услуг населению, реализация дополнительных предпрофессиональных и общеразвивающих программ в области физической культуры и спорта.</p>
+                </div>
+                <div class="mission__card">
+                    <div class="mission__head">
+                        <span class="mission__number">2</span>
+                        <h3 class="mission__subtitle">Спортивная подготовка</h3>
+                    </div>
+                    <p class="mission__text">систематические тренировки по видам спорта, воспитание физических и волевых качеств, улучшение здоровья и повышение уровня спортивных результатов.</p>
+                </div>
+                <div class="mission__card">
+                    <div class="mission__head">
+                        <span class="mission__number">3</span>
+                        <h3 class="mission__subtitle">Социальная миссия</h3>
+                    </div>
+                    <p class="mission__text">оказание услуг населению, реализация дополнительных предпрофессиональных и общеразвивающих программ в области физической культуры и спорта.</p>
+                </div>
+                <div class="mission__card">
+                    <div class="mission__head">
+                        <span class="mission__number">4</span>
+                        <h3 class="mission__subtitle">Спортивная элита</h3>
+                    </div>
+                    <p class="mission__text">Выявление и развитие перспективных спортсменов для стабильных результатов и попадания в сборные РТ и РФ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section__body infrastructure">
+            <div class="infrastructure__head">
+                <h2 class="infrastructure__title">Инфраструктура школы «Батыр» соответствует самым высоким современным стандартам </h2>
+                <p class="infrastructure__text">После капитального ремонта в 2018 году школа полностью обновила залы, оборудование и инвентарь для эффективных и безопасных занятий. Работает современный медицинский кабинет с регулярным контролем здоровья, а также созданы комфортные условия для детей с ограниченными возможностями.</p>
+            </div>
+            <div class="infrastructure__images">
+                <div class="infrastructure__images-head">
+                    <img src="./images/infrastructure/1.webp" class="infrastructure__image" alt="">
+                    <img src="./images/infrastructure/2.webp" class="infrastructure__image" alt="">
+                </div>
+                <div class="infrastructure__images-body">
+                    <img src="./images/infrastructure/3.webp" class="infrastructure__image" alt="">
+                    <img src="./images/infrastructure/4.webp" class="infrastructure__image" alt="">
+                    <img src="./images/infrastructure/5.webp" class="infrastructure__image" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section center">
+        <div class="section__body news">
+            <h2 class="news__title section__title">Достижения и события</h2>
+            <div class="news__cards">
+                <div class="news__card">
+                    <img class="news__image" src="./images/news/1.webp" alt="">
+                    <div class="news__body">
+                        <span class="news__date">12.09.2025</span>
+                        <h3 class="news__subtitle">В «Батыре» прошла комиссия по допуску участников к Первенству Республики...</h3>
+                        <p class="news__text">Это хороший показатель в данной возрастной группе. Соревнования являются отборочными на Первенство ПФО, которое пройдёт в Йошкар-Оле уже через две недели. На кону не только медали, но...</p>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <img class="news__image" src="./images/news/2.webp" alt="">
+                    <div class="news__body">
+                        <span class="news__date">12.09.2025</span>
+                        <h3 class="news__subtitle">В «Батыре» прошла комиссия по допуску участников к Первенству Республики...</h3>
+                        <p class="news__text">Это хороший показатель в данной возрастной группе. Соревнования являются отборочными на Первенство ПФО, которое пройдёт в Йошкар-Оле уже через две недели. На кону не только медали, но...</p>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <img class="news__image" src="./images/news/3.webp" alt="">
+                    <div class="news__body">
+                        <span class="news__date">12.09.2025</span>
+                        <h3 class="news__subtitle">В «Батыре» прошла комиссия по допуску участников к Первенству Республики...</h3>
+                        <p class="news__text">Это хороший показатель в данной возрастной группе. Соревнования являются отборочными на Первенство ПФО, которое пройдёт в Йошкар-Оле уже через две недели. На кону не только медали, но...</p>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <img class="news__image" src="./images/news/4.webp" alt="">
+                    <div class="news__body">
+                        <span class="news__date">12.09.2025</span>
+                        <h3 class="news__subtitle">В «Батыре» прошла комиссия по допуску участников к Первенству Республики...</h3>
+                        <p class="news__text">Это хороший показатель в данной возрастной группе. Соревнования являются отборочными на Первенство ПФО, которое пройдёт в Йошкар-Оле уже через две недели. На кону не только медали, но...</p>
+                    </div>
+                </div>
+            </div>
+            <a class="news__button button" href="#">Смотреть все</a>
+        </div>
+    </section>
+    <section class="section center">
+        <div class="section__body moments">
+            <h2 class="moments__title section__title">Яркие моменты</h2>
+            <div class="moments__images">
+                <img src="./images/moments/1.webp" alt="">
+                <img src="./images/moments/2.webp" alt="">
+                <img src="./images/moments/3.png" alt="">
+                <img src="./images/moments/4.webp" alt="">
+                <img src="./images/moments/5.webp" alt="">
+                <a href="#" class="moments__more bg-accent">
+                    <svg width="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 17.999L18 5.99902M18 5.99902H9M18 5.99902V14.999" stroke="white" stroke-width="0.86307" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Все фотографии</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section center">
+        <div class="section__body contacts">
+            <h2 class="contacts__title section__title">Связь с нами</h2>
+            <div class="contacts__body">
+                <div class="contacts__map rounded">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac6318d778d6edfa42037e3d704e7880a7f833a9133cc6bf80ae17dc874efaeb4&amp;source=constructor" width="890" height="681" frameborder="0"></iframe>
+                </div>
+                <div class="contacts__card bg-accent rounded">
+                    <h3 class="contacts__title h2">Наши контакты</h3>
+                    <p class="contacts__text">Хотите, чтобы ваш ребёнок начал заниматься дзюдо или самбо? Напишите или позвоните — мы с радостью ответим на все вопросы</p>
+                    <div class="contacts__info">
+                        <div class="contacts__info-item">
+                            <span class="contacts__info-title">Адрес:</span>
+                            <p>г. Казань, проспект Ибрагимова, д.44</p>
+                        </div>
+                        <div class="contacts__info-item">
+                            <span class="contacts__info-title">Номер телефона::</span>
+                            <a href="tel:+78435236475">+7 (843) 523-64-75</a>
+                        </div>
+                        <div class="contacts__info-item">
+                            <span class="contacts__info-title">Почта</span>
+                            <a href="mailto:batur_kazan@mail.ru">batur_kazan@mail.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer container">
+    <div class="footer__inner bg-accent rounded">
+        <div class="footer__head">
+            <div class="footer__main">
+                <img class="footer__logo" src="./images/logo.png" alt="Школа Батыр" width="56" height="50">
+
+                <div class="footer__info">
+                    <span>г. Казань, проспект Ибрагимова, д. 44</span>
+                    <a href="tel:+78435236475">+7 (843) 523-64-75</a>
+                    <a href="mailto:batur_kazan@mail.ru">batur_kazan@mail.ru</a>
+                    <span>Режим работы: пн-сб 08:00–21:00</span>
+                </div>
+            </div>
+            <div class="footer__pages">
+                <div class="footer__pages-column">
+                    <h4 class="footer__pages-title">Главное</h4>
+                    <ul class="footer__pages-list">
+                        <li class="footer__pages-item">
+                            <a href="#">О школе</a>
+                        </li>
+                        <li class="footer__pages-item">
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class="footer__pages-item">
+                            <a href="#">Галерея</a>
+                        </li>
+                        <li class="footer__pages-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="footer__pages-item">
+                            <a href="#">Поступление</a>
+                        </li>
+                        <li class="footer__pages-item">
+                            <a href="#">Расписание занятий</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__pages-column">
+                    <h4 class="footer__pages-title">Команда</h4>
+                    <ul class="footer__pages-list">
+                        <li class="footer__pages-item">
+                            <a href="#">Тренеры</a>
+                        </li>
+                        <li class="footer__pages-item">
+                            <a href="#">Персонал</a>
+                        </li>
+                        <li class="footer__pages-item">
+                            <a href="#">Вакансии</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__pages-column">
+                    <h4 class="footer__pages-title">Документы</h4>
+                    <ul class="footer__pages-list">
+                        <li class="footer__pages-item">
+                            <a href="#">Антикоррупция</a>
+                        </li>
+                        <li class="footer__pages-item">
+                            <a href="#">Антидопинговое обеспечение</a>
+                        </li>
+                        <li class="footer__pages-item">
+                            <a href="#">Нормативно-правовые документы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Соц-сети</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

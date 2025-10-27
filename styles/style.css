@@ -1729,7 +1729,6 @@ h4, .h4 {
   color: var(--color-dark-70);
 }
 .coaches__history-item span {
-  font-weight: 400;
   color: var(--color-dark);
 }
 

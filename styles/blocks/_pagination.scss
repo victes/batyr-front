@@ -1,0 +1,38 @@
+.pagination {
+  @include flex-center();
+  gap: 16px;
+
+  @include mobile-m {
+    gap: 8px;
+  }
+
+  &__list {
+    @include flex-center();
+    gap: 8px;
+
+    @include mobile-m {
+      gap: 6px;
+    }
+  }
+
+  &__item {
+    padding: 8px 12px;
+    line-height: 1;
+    color: var(--color-dark-70);
+    border-radius: 6px;
+
+    @include mobile-m {
+      padding: 6px 8px;
+    }
+
+    &.active {
+      color: var(--color-accent);
+      background-color: rgba(8, 77, 167, 0.1);
+    }
+  }
+
+  &__prev-icon, &__next-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

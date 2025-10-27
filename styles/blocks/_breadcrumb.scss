@@ -1,0 +1,24 @@
+.breadcrumb {
+  margin-top: 30px;
+  margin-bottom: 60px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  &__item {
+    font-size: 14px;
+    color: var(--color-dark-40);
+
+    &:not(:last-child):after {
+      content: "/";
+      margin-left: 6px;
+    }
+
+    &.active {
+      color: var(--color-dark-70);
+    }
+  }
+}

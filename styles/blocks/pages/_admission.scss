@@ -1,0 +1,42 @@
+.admission {
+  &__title {
+    font-size: 26px;
+    margin-bottom: 20px;
+
+    @include tablet {
+      font-size: 22px;
+    }
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  & .mission {
+    @include tablet {
+      flex-direction: column-reverse;
+    }
+  }
+
+  & .mission__card {
+    @include tablet-above {
+      min-height: 222px;
+    }
+  }
+
+  & .mission__text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-dark);
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    & a {
+      color: var(--color-accent);
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+    }
+  }
+
+}

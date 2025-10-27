@@ -2,11 +2,17 @@
 
 @import
   "ui/button",
-  "ui/section";
+  "ui/section",
+  "ui/input",
+  "ui/checkbox";
 
 @import
   "blocks/header",
   "blocks/footer",
+  "blocks/breadcrumb",
+  "blocks/pagination";
+
+@import
   "blocks/hero",
   "blocks/history",
   "blocks/achievements",
@@ -15,3 +21,13 @@
   "blocks/news",
   "blocks/moments",
   "blocks/contacts";
+
+@import
+  "blocks/pages/coaches",
+  "blocks/pages/jobs",
+  "blocks/pages/policy",
+  "blocks/pages/documents",
+  "blocks/pages/schedule",
+  "blocks/pages/admission",
+  "blocks/pages/news-page",
+  "blocks/pages/gallery";

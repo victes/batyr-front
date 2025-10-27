@@ -5,6 +5,7 @@
 
 .rounded {
   border-radius: var(--border-radius);
+  overflow: hidden;
 
   @include tablet {
     border-radius: var(--border-radius-sm);
@@ -13,6 +14,7 @@
 
 .rounded-sm {
   border-radius: var(--border-radius-sm);
+  overflow: hidden;
 }
 
 .bg-white {

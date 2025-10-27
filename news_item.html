@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Главная</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
 <header class="header container">
@@ -60,123 +60,37 @@
 </header>
 
 <main class="main container">
-    <section class="section">
-        <div class="section__body hero bg-white rounded">
-            <div class="hero__content">
-                <h1 class="hero__title">Спортивная школа «Батыр» — традиции, сила и победы  с 1986 года</h1>
-                <p class="hero__text">Более 35 лет готовим мастеров спорта, участников Олимпиад  и просто любителей здорового образа жизни — школа «Батыр» открыта для каждого ребёнка</p>
-                <div class="hero__buttons">
-                    <a href="#" class="button">Расписание занятий</a>
-                    <a href="#">Поступление</a>
-                </div>
-            </div>
-            <div class="hero__image rounded">
-                <img class="rounded" src="./images/hero.webp" alt="Школа Батыр" fetchpriority="high" width="890" height="870">
-            </div>
+    <nav class="breadcrumb" aria-label="Хлебные крошки">
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item">
+                <a href="/">Главная</a>
+            </li>
+            <li class="breadcrumb__item">
+                <a href="/coaches.html">Тренерский состав</a>
+            </li>
+            <li class="breadcrumb__item active">
+                <a href="#">Открытие первенства России 2025 в городе Казань</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="section news-page">
+        <div class="news-page__head">
+            <span class="news-page__date">15.08.2025</span>
+            <h1 class="news-page__title">В «Батыре» прошла комиссия по допуску участников к Первенству Республики Татарстан среди юниоров и юниорок до 21 года</h1>
+        </div>
+        <div class="news-page__image rounded">
+            <img src="./images/news/3.webp" alt="">
+        </div>
+        <div class="news-page__content">
+            <p>Вчера на базе Спортивной школы № 12 Набережных Челнов состоялся мастер-класс призёра чемпионата России и командного чемпионата Европы по дзюдо, неоднократного призёра чемпионатов мира по самбо, мастера спорта России международного класса Сергея Алеханова.</p>
+            <p>Именитый спортсмен продемонстрировал технические навыки борьбы в партере, которые в своё время помогли ему стать одним из лучших в своей весовой категории! Также Алеханов рассказал спортсменам об основах философии дзюдо, отметил значение трудолюбия, дисциплины, честности и стремления к победе.</p>
+            <p>Такие мероприятия развивают не только технические навыки, но и вносят значительный вклад в воспитание подрастающего поколения, заряжают мотивацией и вдохновляют. Этот мастер-класс станет для его участников мощным толчком к новым победам, поможет им и дальше усердно трудиться и получать удовольствие от дзюдо<br> — отметили тренеры школы София Меньшикова, Ильшат Бариев и Олег Бессонов.</p>
+            <p>Мероприятие состоялось при поддержке члена Президиума Федерации дзюдо РТ Алексея Ваничкова.</p>
         </div>
     </section>
     <section class="section">
-        <div class="section__body history bg-white rounded">
-            <span class="section__tab">История школы</span>
-            <div class="history__content">
-                <p>
-                История школы началась в 1986 году,
-                <img src="./images/history/1.webp" class="history__image history__image-first rounded" alt="">
-                когда на базе завода «Оргсинтез» был открыт спортивный комплекс «Синтез». В 1995 году
-                <img src="./images/history/2.webp" class="history__image history__image-second rounded" alt="">
-                комплекс был передан в Госкомспорт Республики Татарстан и получил своё нынешнее имя — «Батыр». С тех пор школа стала местом, где воспитывают чемпионов
-                <img src="./images/history/3.webp" class="history__image history__image-third rounded" alt="">
-                и приобщают детей и подростков к здоровому образу жизни.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="section__body achievements bg-white rounded">
-            <span class="section__tab">Успехи</span>
-            <h2 class="achievements__title">
-                За время работы спортивной школы «Батыр» было подготовлено
-            </h2>
-            <div class="achievements__cards">
-                <div class="achievements__card">
-                    <span class="achievements__number">2</span>
-                    <p class="achievements__text">участника Олимпийских игр</p>
-                </div>
-                <div class="achievements__card">
-                    <span class="achievements__number">2</span>
-                    <p class="achievements__text">призера Всемирной летней Универсиады 2013 года</p>
-                </div>
-                <div class="achievements__card">
-                    <span class="achievements__number">8</span>
-                    <p class="achievements__text">мастеров спорта международного класса</p>
-                </div>
-                <div class="achievements__card">
-                    <span class="achievements__number">70+</span>
-                    <p class="achievements__text">мастеров спорта СССР и России</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="section__body mission">
-            <div class="mission__image rounded">
-                <span class="mission__tab bg-white rounded">Наша миссия</span>
-                <h2 class="mission__title">Предметом деятельности нашей спортивной школы является</h2>
-            </div>
-            <div class="mission__cards">
-                <div class="mission__card">
-                    <div class="mission__head">
-                        <span class="mission__number">1</span>
-                        <h3 class="mission__subtitle">Оздоровление и обучение</h3>
-                    </div>
-                    <p class="mission__text">оказание услуг населению, реализация дополнительных предпрофессиональных и общеразвивающих программ в области физической культуры и спорта.</p>
-                </div>
-                <div class="mission__card">
-                    <div class="mission__head">
-                        <span class="mission__number">2</span>
-                        <h3 class="mission__subtitle">Спортивная подготовка</h3>
-                    </div>
-                    <p class="mission__text">систематические тренировки по видам спорта, воспитание физических и волевых качеств, улучшение здоровья и повышение уровня спортивных результатов.</p>
-                </div>
-                <div class="mission__card">
-                    <div class="mission__head">
-                        <span class="mission__number">3</span>
-                        <h3 class="mission__subtitle">Социальная миссия</h3>
-                    </div>
-                    <p class="mission__text">оказание услуг населению, реализация дополнительных предпрофессиональных и общеразвивающих программ в области физической культуры и спорта.</p>
-                </div>
-                <div class="mission__card">
-                    <div class="mission__head">
-                        <span class="mission__number">4</span>
-                        <h3 class="mission__subtitle">Спортивная элита</h3>
-                    </div>
-                    <p class="mission__text">Выявление и развитие перспективных спортсменов для стабильных результатов и попадания в сборные РТ и РФ.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="section__body infrastructure">
-            <div class="infrastructure__head">
-                <h2 class="infrastructure__title">Инфраструктура школы «Батыр» соответствует самым высоким современным стандартам </h2>
-                <p class="infrastructure__text">После капитального ремонта в 2018 году школа полностью обновила залы, оборудование и инвентарь для эффективных и безопасных занятий. Работает современный медицинский кабинет с регулярным контролем здоровья, а также созданы комфортные условия для детей с ограниченными возможностями.</p>
-            </div>
-            <div class="infrastructure__images">
-                <div class="infrastructure__images-head">
-                    <img src="./images/infrastructure/1.webp" class="infrastructure__image" alt="">
-                    <img src="./images/infrastructure/2.webp" class="infrastructure__image" alt="">
-                </div>
-                <div class="infrastructure__images-body">
-                    <img src="./images/infrastructure/3.webp" class="infrastructure__image" alt="">
-                    <img src="./images/infrastructure/4.webp" class="infrastructure__image" alt="">
-                    <img src="./images/infrastructure/5.webp" class="infrastructure__image" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section center">
         <div class="section__body news">
-            <h2 class="news__title section__title">Достижения и события</h2>
+            <h2 class="gallery__title section__page-title">Читать еще</h2>
             <div class="news__cards">
                 <div class="news__card">
                     <img class="news__image" src="./images/news/1.webp" alt="">
@@ -211,56 +125,10 @@
                     </div>
                 </div>
             </div>
-            <a class="news__button button" href="#">Смотреть все</a>
-        </div>
-    </section>
-    <section class="section center">
-        <div class="section__body moments">
-            <h2 class="moments__title section__title">Яркие моменты</h2>
-            <div class="moments__images">
-                <img src="./images/moments/1.webp" alt="">
-                <img src="./images/moments/2.webp" alt="">
-                <img src="./images/moments/3.png" alt="">
-                <img src="./images/moments/4.webp" alt="">
-                <img src="./images/moments/5.webp" alt="">
-                <a href="#" class="moments__more bg-accent">
-                    <svg width="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 17.999L18 5.99902M18 5.99902H9M18 5.99902V14.999" stroke="white" stroke-width="0.86307" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <span>Все фотографии</span>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="section center">
-        <div class="section__body contacts">
-            <h2 class="contacts__title section__title">Связь с нами</h2>
-            <div class="contacts__body">
-                <div class="contacts__map rounded">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac6318d778d6edfa42037e3d704e7880a7f833a9133cc6bf80ae17dc874efaeb4&amp;source=constructor" width="890" height="681" frameborder="0"></iframe>
-                </div>
-                <div class="contacts__card bg-accent rounded">
-                    <h3 class="contacts__title h2">Наши контакты</h3>
-                    <p class="contacts__text">Хотите, чтобы ваш ребёнок начал заниматься дзюдо или самбо? Напишите или позвоните — мы с радостью ответим на все вопросы</p>
-                    <div class="contacts__info">
-                        <div class="contacts__info-item">
-                            <span class="contacts__info-title">Адрес:</span>
-                            <p>г. Казань, проспект Ибрагимова, д.44</p>
-                        </div>
-                        <div class="contacts__info-item">
-                            <span class="contacts__info-title">Номер телефона::</span>
-                            <a href="tel:+78435236475">+7 (843) 523-64-75</a>
-                        </div>
-                        <div class="contacts__info-item">
-                            <span class="contacts__info-title">Почта</span>
-                            <a href="mailto:batur_kazan@mail.ru">batur_kazan@mail.ru</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 </main>
+
 <footer class="footer container">
     <div class="footer__inner bg-accent rounded">
         <div class="footer__head">

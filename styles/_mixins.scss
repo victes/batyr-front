@@ -18,6 +18,11 @@
   color: var(--color-dark);
 }
 
+@mixin reset-input {
+  @include reset-button;
+  outline: none;
+}
+
 @mixin flex-center($isInline: false) {
   @if $isInline {
     display: inline-flex;

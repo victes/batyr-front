@@ -19,7 +19,7 @@
 
   &__card {
     background: var(--color-light);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-sm);
 
     @media (min-width: $mobile) and (max-width: 1200px) {
       &:last-child {
@@ -30,7 +30,7 @@
 
   &__image {
     width: 100%;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-sm);
     margin-bottom: 16px;
   }
 
@@ -49,6 +49,11 @@
     @include tablet {
       font-size: 16px;
     }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: var(--color-dark-70);
   }
 
   &__button {

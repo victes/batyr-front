@@ -1,0 +1,41 @@
+.news-page {
+  max-width: 1060px;
+  margin-inline: auto;
+
+  &__head {
+    margin-bottom: 20px;
+  }
+
+  &__date {
+    display: block;
+    color: var(--color-dark-70);
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 32px;
+
+    @include tablet {
+      font-size: 26px;
+    }
+    @include mobile {
+      font-size: 20px;
+    }
+    @include mobile-m {
+      font-size: 18px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    margin-bottom: 30px;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    color: var(--color-dark-70);
+  }
+}

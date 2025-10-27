@@ -1,0 +1,42 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 500;
+  --size: 36px;
+
+  @include mobile-m {
+    --size: 24px;
+  }
+
+  &__input {
+    appearance: none;
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    background: var(--color-light);
+    border-radius: 6px;
+    border: 1px solid #e8e8ea;
+    flex-shrink: 0;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      background: url("../images/icons/check.svg") no-repeat center center;
+    }
+
+    &:checked::after {
+      width: var(--size);
+      height: var(--size);
+    }
+
+  }
+
+  & label a {
+    padding-bottom: 4px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}

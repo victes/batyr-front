@@ -1,0 +1,81 @@
+.gallery {
+  &__title {
+    font-size: 44px;
+
+    @include tablet {
+      font-size: 34px;
+    }
+    @include mobile {
+      font-size: 26px;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+
+    @include tablet {
+      gap: 20px 10px;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile-m {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__image {
+    border-radius: var(--border-radius);
+    margin-bottom: 16px;
+
+    @include tablet {
+      border-radius: var(--border-radius-sm);
+    }
+  }
+
+  &__date {
+    display: block;
+    color: var(--color-dark-40);
+    margin-bottom: 16px;
+
+    @include tablet {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__subtitle {
+    width: 90%;
+    font-size: 18px;
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+
+  /* Страница объекта галереи */
+
+  &_item &__cards {
+    grid-template-columns: repeat(4, 1fr);
+
+    @include mobile-m {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &_item &__image {
+    @include tablet {
+      border-radius: 20px;
+    }
+
+    @include mobile {
+      border-radius: 15px;
+    }
+
+    @include mobile-m {
+      border-radius: 20px;
+    }
+  }
+}

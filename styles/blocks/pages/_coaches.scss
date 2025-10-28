@@ -4,10 +4,22 @@
     align-items: center;
     gap: 40px;
     margin-bottom: 30px;
+
+    @include mobile-m {
+      align-items: start;
+      flex-direction: column;
+    }
   }
 
   &__tabs {
     height: fit-content;
+
+
+    @include mobile-m {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+    }
 
     & a {
       max-height: 41px;
@@ -40,6 +52,7 @@
   }
 
   &__job {
+    display: block;
     font-size: 14px;
     color: var(--color-accent);
     margin-bottom: 6px;

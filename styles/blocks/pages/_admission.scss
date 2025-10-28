@@ -17,6 +17,19 @@
     }
   }
 
+  & .mission__image {
+    width: 100%;
+    @include tablet-above {
+      width: 50%;
+    }
+  }
+
+  & .mission__cards {
+    @include tablet {
+      max-width: unset;
+    }
+  }
+
   & .mission__card {
     @include tablet-above {
       min-height: 222px;

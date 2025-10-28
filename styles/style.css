@@ -387,11 +387,31 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: clamp(20px, 2.4444444444vw, 44px);
+  font-size: 44px;
+}
+@media (max-width: 1024px) {
+  h2, .h2 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 768px) {
+  h2, .h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 524px) {
+  h2, .h2 {
+    font-size: 20px;
+  }
 }
 
 h3, .h3 {
-  font-size: clamp(18px, 1.4444444444vw, 26px);
+  font-size: 22px;
+}
+@media (max-width: 1024px) {
+  h3, .h3 {
+    font-size: 18px;
+  }
 }
 
 h4, .h4 {
@@ -1139,8 +1159,7 @@ h4, .h4 {
 }
 
 .mission {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   gap: 20px;
 }
 @media (max-width: 1024px) {
@@ -1215,6 +1234,7 @@ h4, .h4 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  max-width: 890px;
 }
 @media (max-width: 1024px) and (min-width: 769px) {
   .mission__cards {
@@ -1670,8 +1690,21 @@ h4, .h4 {
   gap: 40px;
   margin-bottom: 30px;
 }
+@media (max-width: 524px) {
+  .coaches__head {
+    align-items: start;
+    flex-direction: column;
+  }
+}
 .coaches__tabs {
   height: fit-content;
+}
+@media (max-width: 524px) {
+  .coaches__tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
 }
 .coaches__tabs a {
   max-height: 41px;
@@ -1706,6 +1739,7 @@ h4, .h4 {
   }
 }
 .coaches__job {
+  display: block;
   font-size: 14px;
   color: var(--color-accent);
   margin-bottom: 6px;
@@ -1770,7 +1804,7 @@ h4, .h4 {
 }
 @media (max-width: 524px) {
   .jobs__list {
-    padding: 16px 30px;
+    padding: 30px 16px;
   }
 }
 .jobs__item {
@@ -1951,6 +1985,19 @@ h4, .h4 {
 @media (max-width: 1024px) {
   .admission .mission {
     flex-direction: column-reverse;
+  }
+}
+.admission .mission__image {
+  width: 100%;
+}
+@media (min-width: 1025px) {
+  .admission .mission__image {
+    width: 50%;
+  }
+}
+@media (max-width: 1024px) {
+  .admission .mission__cards {
+    max-width: unset;
   }
 }
 @media (min-width: 1025px) {

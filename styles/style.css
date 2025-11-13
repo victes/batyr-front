@@ -852,6 +852,10 @@ h4, .h4 {
     gap: 20px;
   }
 }
+.footer__main-top {
+  display: flex;
+  justify-content: space-between;
+}
 .footer__logo {
   margin-bottom: 40px;
 }
@@ -897,6 +901,24 @@ h4, .h4 {
 .footer__bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 524px) {
+  .footer__bottom {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+}
+.footer__bottom-socials {
+  display: flex;
+  gap: 20px;
+}
+.footer__bottom-author {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .breadcrumb {
@@ -960,6 +982,61 @@ h4, .h4 {
 .pagination__prev-icon, .pagination__next-icon {
   width: 20px;
   height: 20px;
+}
+
+.cookies {
+  position: fixed;
+  bottom: 20px;
+  inset-inline: 0;
+  margin-inline: auto;
+  max-width: 835px;
+  padding-inline: 10px;
+}
+.cookies__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 30px;
+  box-shadow: 0 8px 16px 0 rgba(33, 33, 33, 0.2);
+  border-radius: 20px;
+}
+@media (max-width: 524px) {
+  .cookies__inner {
+    padding: 20px 10px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.cookies__text {
+  max-width: 575px;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .cookies__text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 524px) {
+  .cookies__text {
+    font-size: 10px;
+  }
+}
+.cookies__text a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.cookies__button {
+  max-height: 50px;
+  font-size: 16px;
+}
+@media (max-width: 524px) {
+  .cookies__button {
+    max-height: 42px;
+    font-size: 14px;
+    width: 100%;
+  }
 }
 
 .hero {
@@ -2062,9 +2139,6 @@ h4, .h4 {
   color: var(--color-dark-70);
 }
 
-.gallery {
-  /* Страница объекта галереи */
-}
 .gallery__title {
   font-size: 44px;
 }
@@ -2125,6 +2199,9 @@ h4, .h4 {
   .gallery__subtitle {
     font-size: 16px;
   }
+}
+.gallery {
+  /* Страница объекта галереи */
 }
 .gallery_item .gallery__cards {
   grid-template-columns: repeat(4, 1fr);

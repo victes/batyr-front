@@ -42,6 +42,11 @@
     }
   }
 
+  &__main-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__logo {
     margin-bottom: 40px;
 
@@ -89,5 +94,24 @@
   &__bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    @include mobile-m {
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+    }
+
+    &-socials {
+      display: flex;
+      gap: 20px;
+    }
+
+    &-author {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
   }
 }
